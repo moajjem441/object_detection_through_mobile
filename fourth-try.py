@@ -7,8 +7,7 @@ import pyttsx3
 import threading
 import time
 
-# ১. মডেল লোড (ন্যানো থেকে স্মল মডেলে সুইচ করা হয়েছে ভালো একুরেসির জন্য)
-# যদি পিসি স্লো মনে হয় তবে আবার "yolov8n.pt" এ ফিরে যেতে পারেন
+#1.model load(model switch from nano to small to get better accuracy)
 model = YOLO("yolov8s.pt") 
 
 # ভয়েস স্ট্যাটাস চেক করার জন্য গ্লোবাল ভেরিয়েবল
