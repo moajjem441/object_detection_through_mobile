@@ -34,11 +34,12 @@ def play_audio(text):
 
     except Exception as e:
         print(f"Audio Error: {e}")
-        
+
 
 @app.route('/')
 def home():
     return "ESP32 TTS Server is Running!"
+
 
 @app.route('/tts')
 def tts():
