@@ -37,6 +37,7 @@ def speak_task(text):
 url = "http://192.168.0.106:4747/mjpegfeed"
 cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
 
+
 # ল্যাগ কমাতে বাফার সাইজ সেট করা
 cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
