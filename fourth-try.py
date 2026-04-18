@@ -33,7 +33,7 @@ def speak_task(text):
 
 
 # 3.set up the camera
-# DroidCam এর আইপি এবং পোর্ট নিশ্চিত করুন
+# ensure the droidcam ip and port 
 url = "http://192.168.0.106:4747/mjpegfeed"
 cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
 
