@@ -46,6 +46,7 @@ def tts():
     text = request.args.get('text', 'Hello')
     print(f"📢 Received: {text}")
     
+    
     play_audio(text)
     return "OK"
 
