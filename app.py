@@ -34,6 +34,7 @@ def play_audio(text):
 
     except Exception as e:
         print(f"Audio Error: {e}")
+        
 
 @app.route('/')
 def home():
