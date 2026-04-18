@@ -44,7 +44,7 @@ cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 last_spoken_time = 0
 cooldown_period = 5  # it repeat after  5sec
 
-print("Third Eye AI সিস্টেম চালু হচ্ছে...")
+print("Third Eye AI system is opening..")
 
 while cap.isOpened():
     ret, frame = cap.read()
