@@ -10,6 +10,7 @@ app = Flask(__name__)
 # Pygame mixer initialize (একবার করলেই হবে)
 pygame.mixer.init()
 
+
 def play_audio(text):
     try:
         filename = "voice.mp3"
