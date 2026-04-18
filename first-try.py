@@ -5,7 +5,7 @@ from ultralytics import YOLO
 # give your mobile ip and port here
 ip = "192.168.0.106"
 port = "4747"
-url = f"http://{ip}:{port}/mjpegfeed" # বা /video ব্যবহার করতে পারেন
+url = f"http://{ip}:{port}/mjpegfeed" 
 
 # VideoCapture এ ২য় প্যারামিটার হিসেবে cv2.CAP_FFMPEG যোগ করুন
 cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
