@@ -13,7 +13,7 @@ model = YOLO("yolov8s.pt")
 #  global variable for checking the voice status
 is_speaking = False
 
-# ২. ভয়েস ফাংশন (Backgroud Thread এ চলবে)
+# 2.voice function (background run on threshold)
 def speak_task(text):
     global is_speaking
     is_speaking = True
