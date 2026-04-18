@@ -45,10 +45,11 @@ def home():
 def tts():
     text = request.args.get('text', 'Hello')
     print(f"📢 Received: {text}")
-    
+
     
     play_audio(text)
     return "OK"
+
 
 
 if __name__ == "__main__":
