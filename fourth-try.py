@@ -10,7 +10,7 @@ import time
 #1.model load(model switch from nano to small to get better accuracy)
 model = YOLO("yolov8s.pt") 
 
-# ভয়েস স্ট্যাটাস চেক করার জন্য গ্লোবাল ভেরিয়েবল
+#  global variable for checking the voice status
 is_speaking = False
 
 # ২. ভয়েস ফাংশন (Backgroud Thread এ চলবে)
