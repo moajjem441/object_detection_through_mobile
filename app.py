@@ -21,11 +21,11 @@ def play_audio(text):
         tts = gTTS(text=text, lang='en')
         tts.save(filename)
 
-        # ২. 
+        # 2.play audio 
         pygame.mixer.music.load(filename)
         pygame.mixer.music.play()
 
-        # ৩. অডিও শেষ না হওয়া পর্যন্ত অপেক্ষা (অপশনাল কিন্তু নিরাপদ)
+        # 3. wait until the audio finish
         while pygame.mixer.music.get_busy():
             pygame.time.Clock().tick(10)
             
