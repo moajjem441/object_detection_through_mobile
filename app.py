@@ -1,4 +1,5 @@
 #its for my third eye project to generate the voice accrodign to the esp32 command
+
 from flask import Flask, request
 from gtts import gTTS
 import os
