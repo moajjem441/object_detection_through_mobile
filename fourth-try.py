@@ -18,7 +18,8 @@ def speak_task(text):
     global is_speaking
     is_speaking = True
     try:
-        # ইঞ্জিনের নতুন ইনস্ট্যান্স তৈরি
+        
+        #engine create new instance
         engine = pyttsx3.init()
         engine.setProperty('rate', 160) # কথা বলার গতি
         engine.setProperty('volume', 1.0) # ভলিউম ফুল
