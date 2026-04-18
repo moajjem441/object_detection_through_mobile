@@ -21,7 +21,7 @@ def speak_task(text):
         
         #engine create new instance
         engine = pyttsx3.init()
-        engine.setProperty('rate', 160) # কথা বলার গতি
+        engine.setProperty('rate', 160) # talking speed
         engine.setProperty('volume', 1.0) # ভলিউম ফুল
         engine.say(text)
         engine.runAndWait()
