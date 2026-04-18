@@ -46,10 +46,11 @@ cooldown_period = 5  # it repeat after  5sec
 
 print("Third Eye AI system is opening..")
 
+
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
-        print("ক্যামেরা থেকে ফ্রেম পাওয়া যাচ্ছে না!")
+        print("cound't connect camera!")
         break
 
     # একুরেসি ঠিক রাখতে ইমেজ সাইজ ৬৪০x৬৪০ এ রিসাইজ করা ভালো
