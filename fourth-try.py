@@ -22,7 +22,7 @@ def speak_task(text):
         #engine create new instance
         engine = pyttsx3.init()
         engine.setProperty('rate', 160) # talking speed
-        engine.setProperty('volume', 1.0) # ভলিউম ফুল
+        engine.setProperty('volume', 1.0) # full volume
         engine.say(text)
         engine.runAndWait()
         engine.stop()
@@ -30,6 +30,7 @@ def speak_task(text):
         print(f"ভয়েস এরর: {e}")
     finally:
         is_speaking = False
+        
 
 # ৩. ক্যামেরা এবং ভিডিও সেটআপ
 # DroidCam এর আইপি এবং পোর্ট নিশ্চিত করুন
