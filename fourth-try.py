@@ -30,9 +30,9 @@ def speak_task(text):
         print(f"ভয়েস এরর: {e}")
     finally:
         is_speaking = False
-        
 
-# ৩. ক্যামেরা এবং ভিডিও সেটআপ
+
+# 3.set up the camera
 # DroidCam এর আইপি এবং পোর্ট নিশ্চিত করুন
 url = "http://192.168.0.106:4747/mjpegfeed"
 cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
