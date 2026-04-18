@@ -17,7 +17,7 @@ def play_audio(text):
     try:
         filename = "voice.mp3"
         
-        # ১. অডিও তৈরি করা
+        # ১. make audio
         tts = gTTS(text=text, lang='en')
         tts.save(filename)
 
