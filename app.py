@@ -17,11 +17,11 @@ def play_audio(text):
     try:
         filename = "voice.mp3"
         
-        # ১. make audio
+        # 1. make audio
         tts = gTTS(text=text, lang='en')
         tts.save(filename)
 
-        # ২. অডিও প্লে করা
+        # ২. 
         pygame.mixer.music.load(filename)
         pygame.mixer.music.play()
 
