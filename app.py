@@ -29,7 +29,7 @@ def play_audio(text):
         while pygame.mixer.music.get_busy():
             pygame.time.Clock().tick(10)
             
-        # ফাইলটি আনলোড করা যাতে পরে আবার ওভাররাইট করা যায়
+        # file unload or overright both can be possible
         pygame.mixer.music.unload() 
 
     except Exception as e:
