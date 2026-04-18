@@ -42,7 +42,7 @@ cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
 cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
 last_spoken_time = 0
-cooldown_period = 5  # ঠিক ৫ সেকেন্ড পর পর বলবে
+cooldown_period = 5  # it repeat after  5sec
 
 print("Third Eye AI সিস্টেম চালু হচ্ছে...")
 
