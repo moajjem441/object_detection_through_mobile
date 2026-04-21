@@ -71,7 +71,7 @@ while cap.isOpened():
     # 5.timing and voice logic
     current_time = time.time()
     
-    # যদি কোনো অবজেক্ট ডিটেক্ট হয়
+    # if any object detected
     if len(results[0].boxes) > 0:
         # সবচেয়ে বেশি নিশ্চিত (First confidence box) অবজেক্টটি নেওয়া
         cls_id = int(results[0].boxes.cls[0])
