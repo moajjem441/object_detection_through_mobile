@@ -77,7 +77,7 @@ while cap.isOpened():
         # সবচেয়ে বেশি নিশ্চিত (First confidence box) অবজেক্টটি নেওয়া
         cls_id = int(results[0].boxes.cls[0])
         label = model.names[cls_id]
-        
+
 
         # ৫ সেকেন্ড গ্যাপ এবং ইঞ্জিন বিজি কি না চেক করা
         if (current_time - last_spoken_time > cooldown_period) and not is_speaking:
@@ -95,6 +95,7 @@ while cap.isOpened():
     # Esc কি চাপলে বন্ধ হবে
     if cv2.waitKey(1) & 0xFF == 27:
         break
+    
 
 cap.release()
 cv2.destroyAllWindows()
