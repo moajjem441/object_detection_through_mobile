@@ -27,7 +27,7 @@ def speak_task(text):
         engine.runAndWait()
         engine.stop()
     except Exception as e:
-        print(f"ভয়েস এরর: {e}")
+        print(f"voice error: {e}")
     finally:
         is_speaking = False
 
