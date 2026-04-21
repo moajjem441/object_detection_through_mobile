@@ -53,7 +53,7 @@ while cap.isOpened():
         print("cound't connect camera!")
         break
 
-    # একুরেসি ঠিক রাখতে ইমেজ সাইজ ৬৪০x৬৪০ এ রিসাইজ করা ভালো
+    # 640 x 640 image size is good for maintaining accuracy
     display_frame = cv2.resize(frame, (640, 480))
 
     # ৪. YOLO ডিটেকশন (সবচেয়ে ভালো একুরেসির জন্য প্যারামিটার সেট করা)
