@@ -91,11 +91,12 @@ while cap.isOpened():
 
     # ৬. স্ক্রিনে ভিডিও দেখানো
     cv2.imshow("Third Eye AI - Practice Mode", annotated_frame)
+    
 
     # Esc কি চাপলে বন্ধ হবে
     if cv2.waitKey(1) & 0xFF == 27:
         break
-    
+
 
 cap.release()
 cv2.destroyAllWindows()
