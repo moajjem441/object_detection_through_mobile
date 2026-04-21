@@ -68,7 +68,7 @@ while cap.isOpened():
     # রেজাল্ট প্লট করা
     annotated_frame = results[0].plot()
 
-    # ৫. টাইমিং এবং ভয়েস লজিক
+    # 5.timing and voice logic
     current_time = time.time()
     
     # যদি কোনো অবজেক্ট ডিটেক্ট হয়
