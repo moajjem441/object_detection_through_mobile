@@ -56,7 +56,7 @@ while cap.isOpened():
     # 640 x 640 image size is good for maintaining accuracy
     display_frame = cv2.resize(frame, (640, 480))
 
-    # ৪. YOLO detection (সবচেয়ে ভালো একুরেসির জন্য প্যারামিটার সেট করা)
+    # ৪. YOLO detection (set perameter to get best accuracy)
     results = model.predict(
         source=display_frame, 
         conf=0.45,       # কনফিডেন্স ০.৪৫ (ব্যালেন্সড একুরেসি)
