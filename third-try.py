@@ -8,7 +8,7 @@ import time
 # 1.yolo model load
 model = YOLO("yolov8n.pt")
 
-# ভয়েস স্ট্যাটাস চেক করার জন্য একটি গ্লোবাল ভেরিয়েবল
+# global variable for checking voice status
 is_speaking = False
 
 # ২. ভয়েস ফাংশন
