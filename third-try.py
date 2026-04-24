@@ -5,7 +5,7 @@ import pyttsx3
 import threading
 import time
 
-# ১. YOLO মডেল লোড
+# 1.yolo model load
 model = YOLO("yolov8n.pt")
 
 # ভয়েস স্ট্যাটাস চেক করার জন্য একটি গ্লোবাল ভেরিয়েবল
