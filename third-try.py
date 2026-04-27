@@ -24,7 +24,7 @@ def speak_task(text):
     except Exception as e:
         print(f"Voice error: {e}")
     finally:
-        is_speaking = False # কথা শেষ হলে আবার রেডি হবে
+        is_speaking = False # it will be ready after finish talk
 
 # 3 camera setup
 url = "http://192.168.0.106:4747/mjpegfeed"
