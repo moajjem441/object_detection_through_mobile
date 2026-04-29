@@ -26,7 +26,7 @@ def speak_task(text):
     finally:
         is_speaking = False # it will be ready after finish talk
 
-# 3 camera setup
+# 3  camera setup
 url = "http://192.168.0.106:4747/mjpegfeed"
 cap = cv2.VideoCapture(url, cv2.CAP_FFMPEG)
 
